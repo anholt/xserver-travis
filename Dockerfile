@@ -5,6 +5,7 @@ RUN apt-get update -qq && \
     apt-get install --no-install-recommends -qq -y \
         autoconf \
         automake \
+        ccache \
         clang \
         gcc \
         git \
@@ -83,7 +84,8 @@ RUN apt-get update -qq && \
         x11-utils \
         x11-xserver-utils \
         xcb-proto \
-	xfonts-utils \
+        xfonts-utils \
+        xkb-data \
    && rm -rf /var/lib/apt/lists/*
 
 RUN rm -rf /usr/share/doc/* /usr/share/man/*
