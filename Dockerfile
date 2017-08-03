@@ -81,6 +81,7 @@ RUN apt-get update -qq && \
         x11proto-xf86dri-dev \
         x11proto-xf86vidmode-dev \
         x11proto-xinerama-dev \
+        x11-xkb-utils \
         x11-utils \
         x11-xserver-utils \
         xcb-proto \
