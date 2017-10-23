@@ -95,7 +95,7 @@ RUN locale-gen C.UTF-8 && /usr/sbin/update-locale LANG=C.UTF-8
 
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
 
-RUN pip3 install meson
+RUN pip3 install meson==0.43.0
 
 RUN mkdir -p /root
 WORKDIR /root
